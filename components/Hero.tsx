@@ -103,7 +103,7 @@ export default function Hero() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                 >
-                  Профессиональный бизнес-консультант и мотивационный спикер с 5-летним опытом в сфере развития бизнеса и личностного роста.
+                  Предприниматель и лидер команды из 700 партнеров. Помогаю людям начать свой путь в онлайн-бизнесе с нуля и достичь финансовой независимости.
                 </motion.p>
               </div>
 
@@ -114,9 +114,9 @@ export default function Hero() {
                 transition={{ delay: 0.6 }}
               >
                 {[
-                  { number: '5', label: 'лет опыта' },
+                  { number: '13', label: 'лет с 2011' },
                   { number: '700', label: 'партнеров' },
-                  { number: '150+', label: 'тренингов' }
+                  { number: '2024', label: 'свой магазин' }
                 ].map((stat, index) => (
                   <motion.div 
                     key={index}

@@ -6,7 +6,10 @@ export default function Document() {
       <Head>
         <meta charSet="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="description" content="Профессиональный бизнес-консультант и мотивационный спикер с 8-летним опытом. Помогаю предпринимателям достигать целей через эффективные стратегии развития." />
+        <link rel="alternate icon" href="/alina.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/alina.png" />
+        <meta name="theme-color" content="#9333EA" />
+        <meta name="description" content="Алина Абдрахманова - предприниматель и лидер команды из 700 партнеров. Помогаю людям начать свой путь в онлайн-бизнесе с нуля." />
       </Head>
       <body>
         <Main />

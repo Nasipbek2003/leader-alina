@@ -40,23 +40,23 @@ export default function Hero() {
                   Путь к успеху
                 </div>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Профессиональный бизнес-консультант и мотивационный спикер с 5-летним опытом в сфере развития бизнеса и личностного роста.
+                  Предприниматель и лидер команды из 700 партнеров. Помогаю людям начать свой путь в онлайн-бизнесе с нуля и достичь финансовой независимости.
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600">5</div>
-                  <div className="text-sm text-gray-600">лет опыта</div>
+                  <div className="text-3xl font-bold text-purple-600">13</div>
+                  <div className="text-sm text-gray-600">лет с 2011</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-600">700</div>
                   <div className="text-sm text-gray-600">партнеров</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600">150+</div>
-                  <div className="text-sm text-gray-600">тренингов</div>
+                  <div className="text-3xl font-bold text-purple-600">2024</div>
+                  <div className="text-sm text-gray-600">свой магазин</div>
                 </div>
               </div>
 

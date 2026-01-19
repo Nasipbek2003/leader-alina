@@ -5,35 +5,35 @@ export default function Achievements() {
   const achievements = [
     {
       icon: Users,
-      title: 'Более 200 клиентов',
-      description: 'Создала успешную консалтинговую практику с более чем 200 довольными клиентами',
+      title: 'Команда из 700 партнеров',
+      description: 'Создала и развила успешную команду из 700 активных партнеров по всей стране',
       color: 'from-purple-600 to-pink-600'
     },
     {
-      icon: Mic,
-      title: '150+ тренингов',
-      description: 'Провела более 150 тренингов по личностному росту и развитию бизнеса',
+      icon: TrendingUp,
+      title: 'Опыт в банковской сфере',
+      description: 'Работала в банке "Бай Тушум", получила ценный опыт в финансовой сфере',
       color: 'from-blue-600 to-purple-600'
     },
     {
       icon: BookOpen,
-      title: 'Автор бестселлера',
-      description: 'Написала книгу "Формула успеха в бизнесе", которая стала бестселлером',
+      title: 'Эксперт онлайн-продаж',
+      description: 'С 2021 года успешно развиваю онлайн-бизнес и обучаю других',
       color: 'from-green-600 to-blue-600'
     },
     {
       icon: Award,
-      title: 'Международный спикер',
-      description: 'Выступаю на международных бизнес-конференциях и форумах',
+      title: 'Собственный магазин',
+      description: 'В 2024 году открыла собственный магазин и продолжаю расширять бизнес',
       color: 'from-yellow-600 to-orange-600'
     }
   ];
 
   const stats = [
-    { number: '8+', label: 'Лет опыта', icon: TrendingUp },
-    { number: '200+', label: 'Довольных клиентов', icon: Users },
-    { number: '150+', label: 'Проведенных тренингов', icon: Mic },
-    { number: '95%', label: 'Успешных проектов', icon: Star }
+    { number: '2011', label: 'Начало пути', icon: Star },
+    { number: '700', label: 'Партнеров в команде', icon: Users },
+    { number: '2021', label: 'Старт онлайн-бизнеса', icon: TrendingUp },
+    { number: '2024', label: 'Открытие магазина', icon: Award }
   ];
 
   return (
@@ -46,8 +46,8 @@ export default function Achievements() {
               Мои <span className="text-purple-600">Достижения</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              За годы работы я достигла значительных результатов в области бизнес-консалтинга 
-              и помогла сотням предпринимателей реализовать свои цели.
+              От выпускницы сельской школы до успешного предпринимателя с командой из 700 партнеров. 
+              Мой путь доказывает, что при желании и упорстве можно достичь любых целей.
             </p>
           </div>
 
