@@ -8,6 +8,10 @@ export default function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
+  const openWhatsApp = () => {
+    window.open('https://wa.me/996705020238', '_blank')
+  }
+
   const timeline = [
     {
       year: '2011',
@@ -30,14 +34,24 @@ export default function About() {
       description: 'Начала карьеру в банковской сфере, получила ценный опыт в финансах'
     },
     {
+      year: '2020',
+      title: 'Начало пути в бизнесе',
+      description: 'Начала свой путь в сфере онлайн-бизнеса и предпринимательства'
+    },
+    {
       year: '2021',
-      title: 'Начало онлайн-бизнеса',
-      description: 'Начала заниматься онлайн-продажами, вникла в эту сферу и создала свою команду'
+      title: 'Старт онлайн-бизнеса',
+      description: 'Запустила онлайн-бизнес, открыла магазин и приобрела свою первую машину за $43,000'
+    },
+    {
+      year: '2022',
+      title: 'Рост команды',
+      description: '3 партнера из команды также приобрели автомобили, команда активно растет'
     },
     {
       year: '2024',
-      title: 'Открытие магазина',
-      description: 'Открыла собственный магазин, команда выросла до 700 партнеров'
+      title: 'Команда 700 партнеров',
+      description: 'Команда выросла до 700 активных партнеров по всей стране'
     }
   ]
 
@@ -56,8 +70,8 @@ export default function About() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Мой путь начался в селе, где я закончила школу в 2011 году. После получения высшего образования 
-              в Экономическом университете Бишкека, я прошла путь от банковского сотрудника до успешного предпринимателя 
-              с командой из 700 партнеров.
+              в Экономическом университете Бишкека и работы в банке, в 2020 году я начала свой путь в онлайн-бизнесе. 
+              За 6 лет построила команду из 700 партнеров и приобрела машину за $43,000.
             </p>
           </motion.div>
 
@@ -174,6 +188,7 @@ export default function About() {
                   ))}
                 </div>
                 <motion.button 
+                  onClick={openWhatsApp}
                   className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold"
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0,0,0,0.2)" }}
                   whileTap={{ scale: 0.95 }}

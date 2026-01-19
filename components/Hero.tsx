@@ -17,6 +17,10 @@ export default function Hero() {
     }
   }
 
+  const openWhatsApp = () => {
+    window.open('https://wa.me/996705020238', '_blank')
+  }
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-pink-50"></div>
@@ -114,9 +118,9 @@ export default function Hero() {
                 transition={{ delay: 0.6 }}
               >
                 {[
-                  { number: '13', label: 'лет с 2011' },
+                  { number: '6', label: 'лет с 2020' },
                   { number: '700', label: 'партнеров' },
-                  { number: '2024', label: 'свой магазин' }
+                  { number: '$43k', label: 'своя машина' }
                 ].map((stat, index) => (
                   <motion.div 
                     key={index}
@@ -137,7 +141,7 @@ export default function Hero() {
                 transition={{ delay: 0.7 }}
               >
                 <motion.button 
-                  onClick={() => scrollToSection('contact')}
+                  onClick={openWhatsApp}
                   className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold"
                   whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
                   whileTap={{ scale: 0.95 }}

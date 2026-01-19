@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, Instagram, Heart, ArrowUp } from 'lucide-react'
+import { Instagram, Heart, ArrowUp, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -24,15 +24,17 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
-                Профессиональный бизнес-консультант и мотивационный спикер. 
-                Помогаю предпринимателям достигать целей через эффективные стратегии развития.
+                Предприниматель и лидер команды из 700 партнеров. 
+                Помогаю людям начать свой путь в онлайн-бизнесе с нуля и достичь финансовой независимости.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="mailto:leader_alina"
+                  href="https://wa.me/996705020238"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
                 >
-                  <Mail className="w-5 h-5" />
+                  <MessageCircle className="w-5 h-5" />
                 </a>
                 <a
                   href="https://www.instagram.com/leader_alina/"

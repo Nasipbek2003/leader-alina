@@ -6,6 +6,10 @@ export default function Achievements() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
+  const openWhatsApp = () => {
+    window.open('https://wa.me/996705020238', '_blank')
+  }
+
   const achievements = [
     {
       icon: Users,
@@ -14,30 +18,30 @@ export default function Achievements() {
       color: 'from-purple-600 to-pink-600'
     },
     {
-      icon: TrendingUp,
-      title: 'Опыт в банковской сфере',
-      description: 'Работала в банке "Бай Тушум", получила ценный опыт в финансовой сфере',
+      icon: Award,
+      title: 'Машина за $43,000',
+      description: 'Приобрела собственный автомобиль стоимостью $43,000 благодаря успешному бизнесу',
       color: 'from-blue-600 to-purple-600'
     },
     {
-      icon: BookOpen,
-      title: 'Эксперт онлайн-продаж',
-      description: 'С 2021 года успешно развиваю онлайн-бизнес и обучаю других',
+      icon: TrendingUp,
+      title: '3 автопроекта в команде',
+      description: '3 партнера из моей команды также приобрели автомобили, достигнув финансового успеха',
       color: 'from-green-600 to-blue-600'
     },
     {
-      icon: Award,
+      icon: BookOpen,
       title: 'Собственный магазин',
-      description: 'В 2024 году открыла собственный магазин и продолжаю расширять бизнес',
+      description: 'В 2021 году открыла собственный магазин и продолжаю расширять бизнес',
       color: 'from-yellow-600 to-orange-600'
     }
   ]
 
   const stats = [
-    { number: '2011', label: 'Начало пути', icon: Star },
+    { number: '2020', label: 'Начало пути', icon: Star },
     { number: '700', label: 'Партнеров в команде', icon: Users },
-    { number: '2021', label: 'Старт онлайн-бизнеса', icon: TrendingUp },
-    { number: '2024', label: 'Открытие магазина', icon: Award }
+    { number: '$43k', label: 'Своя машина', icon: Award },
+    { number: '3', label: 'Автопроекта в команде', icon: TrendingUp }
   ]
 
   return (
@@ -54,8 +58,8 @@ export default function Achievements() {
               Мои <span className="text-purple-600">Достижения</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              От выпускницы сельской школы до успешного предпринимателя с командой из 700 партнеров. 
-              Мой путь доказывает, что при желании и упорстве можно достичь любых целей.
+              За 6 лет с 2020 года построила команду из 700 партнеров, приобрела машину за $43,000, 
+              а 3 партнера из команды также достигли автопроектов. Мой путь доказывает, что при желании и упорстве можно достичь любых целей.
             </p>
           </motion.div>
 
@@ -147,6 +151,7 @@ export default function Achievements() {
                 Позвольте мне помочь вам достичь ваших бизнес-целей и раскрыть ваш потенциал
               </motion.p>
               <motion.button 
+                onClick={openWhatsApp}
                 className="px-8 py-4 bg-white text-purple-600 rounded-full font-semibold"
                 whileHover={{ scale: 1.1, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.2)" }}
                 whileTap={{ scale: 0.95 }}
